@@ -76,12 +76,15 @@ class EventCard extends StatelessWidget {
               ],
             ),
           ),
-          // TODO 2:
-          // Agregar un botón que permita registrarse o marcar
-          // el evento como "Me interesa".
-          //
-          // El botón deberá ejecutar:
-          // onPressed();
+
+          Padding(
+            padding: const EdgeInsets.fromLTRB(12, 4, 12, 8),
+            child: FilledButton.tonalIcon(
+              onPressed: onPressed,
+              icon: const Icon(Icons.favorite_border, size: 18),
+              label: const Text('Me interesa'),
+            ),
+          ),
 
           const SizedBox(height: 8),
         ],
