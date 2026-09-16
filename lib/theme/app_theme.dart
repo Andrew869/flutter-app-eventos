@@ -107,6 +107,10 @@ class AppTheme {
         selectedColor: GruvboxPalette.blue,
         side: const BorderSide(color: GruvboxPalette.bg3),
         labelStyle: const TextStyle(color: GruvboxPalette.fg0),
+        secondaryLabelStyle: const TextStyle(
+          color: GruvboxPalette.bg0,
+          fontWeight: FontWeight.w600,
+        ),
         checkmarkColor: GruvboxPalette.bg0,
         padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
       ),
