@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../theme/app_theme.dart';
+
 class EventCard extends StatelessWidget {
   final Map<String, dynamic> evento;
   final VoidCallback onPressed;
@@ -115,6 +117,10 @@ class EventCard extends StatelessWidget {
                   onPressed: onPressed,
                   icon: const Icon(Icons.favorite_border, size: 18),
                   label: const Text('Me interesa'),
+                  style: FilledButton.styleFrom(
+                    backgroundColor: GruvboxPalette.orange,
+                    foregroundColor: GruvboxPalette.bg0,
+                  ),
                 ),
               ],
             ),

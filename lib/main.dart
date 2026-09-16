@@ -15,7 +15,8 @@ class CampusEventosApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Campus Eventos',
-      theme: AppTheme.lightTheme,
+      theme: AppTheme.theme,
+      darkTheme: AppTheme.theme,
       home: const HomePage(),
     );
   }
