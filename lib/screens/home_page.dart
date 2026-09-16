@@ -90,7 +90,9 @@ class _HomePageState extends State<HomePage> {
                         crossAxisCount: columnas,
                         crossAxisSpacing: 12,
                         mainAxisSpacing: 12,
-                        childAspectRatio: 0.72,
+                        // Altura fija calculada del contenido de la tarjeta
+                        // para evitar desbordamientos en cualquier ancho.
+                        mainAxisExtent: 370,
                       ),
                       itemBuilder: (context, index) {
                         final evento = eventosMostrados[index];
